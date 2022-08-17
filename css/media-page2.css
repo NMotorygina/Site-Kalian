@@ -1,0 +1,140 @@
+@media (max-width: 1310px) {
+    .footer__right_menu-warning {
+        margin-right: auto;
+    }
+}
+@media (max-width: 1270px) {
+    .menu__links-row {
+        padding-right: 0;
+    }
+}
+@media (max-width: 1160px) {
+    .menu__phone-number1 {
+        padding-right: 10px;
+    }
+    .page__title1 {
+        justify-content: center;
+    }
+    .card-deck {
+        justify-content: center
+    }
+}
+@media (max-width: 1150px) {
+    .menu__links-row {
+        display: none;
+    }
+    .ad__menu {
+        display: flex;
+    }
+    .menu__contacts-row {
+        display: none;
+    }
+    .menu__container2 {
+        display: flex;
+    }
+}
+@media (max-width: 1050px) {
+    .footer1 {
+        display: none;
+    }
+    .footer2 {
+        display: block;
+    }
+}
+@media (max-width: 768px) {
+    .ad__menu-img {
+        width: 169px;
+        height: 71px;
+    }
+    .menu__container {
+        padding-top: 20px;
+        padding-bottom: 29px;
+    }
+    .ad__menu-img-div {
+        width: auto;
+    }
+    .menu__contacts-row2 {
+        gap: 38px;
+    }
+    .menu__container2 {
+        padding-bottom: 25px;
+    }
+    .menu__phone-number1 {
+        font-size: 16px;
+    }
+    .menu__phone-number2 {
+        font-size: 16px;
+    }
+    .page__title {
+        font-size: 24px;
+        padding-bottom: 22px;
+    }
+}
+@media (min-width: 576px) {
+    .card-deck .card {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    .card-deck{
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 576px) {
+    .all-cards {
+        justify-content: center;
+    }
+}
+@media (max-width: 400px) {
+    .menu__container2 {
+        padding-left: 18px;
+        padding-right: 18px;
+        gap: 16px;
+    }
+    .ad__menu-img-div {
+        padding-left: 28px;
+    }
+    .menu__container2-row img {
+        width: 20px;
+        height: 20px;
+    }
+    .menu__phone-number1 {
+        padding-right: 0;
+    }
+}
+@media (max-width: 375px) {
+    .card__news {
+        max-width: 351px;
+        padding: 14px;
+    }
+    .card-deck .card {
+        margin-bottom: 10px;
+    }
+    .card-img-top {
+        height: 170px;
+    }
+    .card__body {
+        padding-top: 24px;
+        padding-right: 0;
+    }
+    .card__date {
+        font-size: 10px;
+        padding-bottom: 6px;
+    }
+    .card__title {
+        font-size: 16px;
+        margin-bottom: 6px;
+    }
+    .card__text {
+        margin-bottom: 6px;
+    }
+    .pagination {
+        margin-bottom: 45px;
+    }
+    .page-item {
+        height: 36px;
+    }
+    .page-link {
+        font-size: 12px
+    }
+}

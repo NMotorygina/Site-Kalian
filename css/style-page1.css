@@ -1,0 +1,2186 @@
+@font-face {
+    font-family: MuseoSansCyrl;
+    src: url(../fonts/MuseoSansCyrl500.ttf);
+}
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1320px;
+}
+
+.backgroung-image {
+    position: absolute;
+    width: 100%;
+    height: 333px;
+    z-index: -5;
+}
+
+.menu__container {
+    padding-top: 28px;
+    align-items: center;
+    padding-bottom: 32px;
+}
+
+.menu__links-row {
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 20%;
+}
+
+.menu__link-button {
+    font-family: MuseoSansCyrl;
+    font-weight: 600;
+    font-size: 18px;
+    color: #232323;
+    border-radius: 10px;
+    width: 211px;
+    display: inline-block;
+    padding: 12px 20px;
+    background: #F8C200 url(../img/news/menu-catalog.png) no-repeat ;
+    text-align: right;
+    background-position: 20px;
+}
+
+.menu__link-button:hover {
+    text-decoration: none;
+    color: #232323;
+}
+
+.menu__link {
+    font-family: MuseoSansCyrl;
+    font-weight: 600;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.menu__link:hover {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.menu__contacts-row {
+    gap: 10px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.menu__phone-number1 {
+    font-family: MuseoSansCyrl;
+    font-weight: 600;
+    font-size: 20px;
+    color: #FFFFFF;
+    padding-right: 40px;
+}
+
+.menu__phone-number2 {
+    font-family: MuseoSansCyrl;
+    font-weight: 600;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+footer {
+    background: #000000;
+}
+
+.footer__container {
+    padding-bottom: 52px;
+    padding-top: 44px;
+}
+
+.footer__left_menu {
+    justify-content: space-between;
+    padding-right: 20%;
+    align-items: center;
+}
+
+.footer__left_menu-link {
+    font-family: MuseoSansCyrl;
+    font-weight: 600;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.footer__left_menu-link:hover {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.footer__left_menu-article {
+    padding-top: 36px;
+    padding-bottom: 33px;
+    padding-right: 10%;
+    font-family: MuseoSansCyrl;
+    font-weight: 400;
+    font-size: 13px;
+    color: #868686;
+}
+
+.footer__left_menu-policy {
+    font-family: MuseoSansCyrl;
+    font-weight: 400;
+    font-size: 13px;
+    color: #868686;
+    text-decoration: underline;
+}
+
+.footer__left_menu-policy:hover {
+    color: #868686;
+}
+
+.footer__right_menu {
+    padding-bottom: 27px;
+}
+
+.footer__right_menu-title {
+    font-family: MuseoSansCyrl;
+    font-weight: 600;
+    font-size: 14px;
+    color: #868686;
+}
+
+.footer__right_menu-contact {
+    align-items: center;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.footer__right_menu-contact-number {
+    font-family: MuseoSansCyrl;
+    font-weight: 600;
+    font-size: 20px;
+    color: #FFFFFF;
+    padding-left: 10px;
+}
+
+.footer__right_menu-subtitle {
+    font-family: MuseoSansCyrl;
+    font-weight: 400;
+    font-size: 12px;
+    color: #868686;
+}
+
+.footer__right_menu-adress {
+    font-family: MuseoSansCyrl;
+    font-weight: 600;
+    font-size: 16px;
+    color: #FFFFFF;
+    padding-left: 10px;
+}
+
+.footer__right_menu-hours {
+    font-family: MuseoSansCyrl;
+    font-weight: 400;
+    font-size: 12px;
+    color: #868686;
+    padding-top: 10px;
+    padding-bottom: 60px;
+}
+
+.footer__right_menu-warning {
+    align-items: center;
+}
+
+.footer__right_menu-warning-column {
+    padding: 0;
+}
+
+.footer__right_menu-warning-text {
+    font-family: MuseoSansCyrl;
+    font-weight: 600;
+    font-size: 13px;
+    color: #747474;
+    border: 1px solid #4A4A4A;
+    border-radius: 7px;
+    padding: 8px 19px;
+}
+
+.catalog__menu {
+    max-width: 280px;
+    flex-direction: column;
+}
+
+.catalog__menu-title {
+    height: 58px;
+    font-family: MuseoSansCyrl;
+    font-weight: 600;
+    font-size: 24px;
+    color: #000000;
+}
+
+.hide1, .hide1 + label ~ div {
+    display: none;
+}
+
+.hide1 + label {
+    margin: 0;
+    padding-top: 9px;
+    cursor: pointer;
+    font-family: MuseoSansCyrl;
+    font-weight: 400;
+    font-size: 16px;
+    color: #232323;
+    background: url(../img/point-down.png) no-repeat;
+    background-position: 240px center;
+    width: 250px;
+    height: 38px;
+}
+
+.hide1:checked + label {
+    font-weight: 600;
+    background: url(../img/point-up.png) no-repeat;
+    background-position: 240px center;
+}
+
+.hide1:checked + label ~ div {
+    display: block;
+    cursor: pointer;
+    padding-top: 9px;
+    font-family: MuseoSansCyrl;
+    font-weight: 400;
+    font-size: 16px;
+    color: #232323;
+    background: url(../img/point-white.png) no-repeat;
+    background-position: 240px center;
+    width: 250px;
+    height: 38px;
+    padding-left: 14px;
+}
+
+.hide1:checked + label ~ div:hover {
+    z-index: 1;
+    background: url(../img/point-yellow.png) no-repeat;
+    background-position: 240px center;
+}
+
+.hide1:checked + label ~ div:hover {
+    background-color: #F2F2F2;
+    border-radius: 10px;
+}
+
+.hide2, .hide2 + label ~ div {
+    display: none;
+}
+
+.hide2 + label {
+    margin: 0;
+    padding-top: 9px;
+    cursor: pointer;
+    font-family: MuseoSansCyrl;
+    font-weight: 400;
+    font-size: 16px;
+    color: #232323;
+    background: url(../img/point-down.png) no-repeat;
+    background-position: 240px center;
+    width: 250px;
+    height: 38px;
+}
+
+.hide2:checked + label {
+    font-weight: 600;
+    background: url(../img/point-up.png) no-repeat;
+    background-position: 240px center;
+}
+
+.hide2:checked + label ~ div {
+    display: block;
+    cursor: pointer;
+    padding-top: 9px;
+    font-family: MuseoSansCyrl;
+    font-weight: 400;
+    font-size: 16px;
+    color: #232323;
+    background: url(../img/point-white.png) no-repeat;
+    background-position: 240px center;
+    width: 250px;
+    height: 38px;
+    padding-left: 14px;
+}
+
+.hide2:checked + label ~ div:hover {
+    z-index: 1;
+    background: url(../img/point-yellow.png) no-repeat;
+    background-position: 240px center;
+}
+
+.hide2:checked + label ~ div:hover {
+    background-color: #F2F2F2;
+    border-radius: 10px;
+}
+
+.hide3, .hide3 + label ~ div {
+    display: none;
+}
+
+.hide3 + label {
+    margin: 0;
+    padding-top: 9px;
+    cursor: pointer;
+    font-family: MuseoSansCyrl;
+    font-weight: 400;
+    font-size: 16px;
+    color: #232323;
+    background: url(../img/point-down.png) no-repeat;
+    background-position: 240px center;
+    width: 250px;
+    height: 38px;
+}
+
+.hide3:checked + label {
+    font-weight: 600;
+    background: url(../img/point-up.png) no-repeat;
+    background-position: 240px center;
+}
+
+.hide3:checked + label ~ div {
+    display: block;
+    cursor: pointer;
+    padding-top: 9px;
+    font-family: MuseoSansCyrl;
+    font-weight: 400;
+    font-size: 16px;
+    color: #232323;
+    background: url(../img/point-white.png) no-repeat;
+    background-position: 240px center;
+    width: 250px;
+    height: 38px;
+    padding-left: 14px;
+}
+
+.hide3:checked + label ~ div:hover {
+    z-index: 1;
+    background: url(../img/point-yellow.png) no-repeat;
+    background-position: 240px center;
+}
+
+.hide3:checked + label ~ div:hover {
+    background-color: #F2F2F2;
+    border-radius: 10px;
+}
+
+.hide4, .hide4 + label ~ div {
+    display: none;
+}
+
+.hide4 + label {
+    margin: 0;
+    padding-top: 9px;
+    cursor: pointer;
+    font-family: MuseoSansCyrl;
+    font-weight: 400;
+    font-size: 16px;
+    color: #232323;
+    background: url(../img/point-down.png) no-repeat;
+    background-position: 240px center;
+    width: 250px;
+    height: 38px;
+}
+
+.hide4:checked + label {
+    font-weight: 600;
+    background: url(../img/point-up.png) no-repeat;
+    background-position: 240px center;
+}
+
+.hide4:checked + label ~ div {
+    display: block;
+    cursor: pointer;
+    padding-top: 9px;
+    font-family: MuseoSansCyrl;
+    font-weight: 400;
+    font-size: 16px;
+    color: #232323;
+    background: url(../img/point-white.png) no-repeat;
+    background-position: 240px center;
+    width: 250px;
+    height: 38px;
+    padding-left: 14px;
+}
+
+.hide4:checked + label ~ div:hover {
+    z-index: 1;
+    background: url(../img/point-yellow.png) no-repeat;
+    background-position: 240px center;
+}
+
+.hide4:checked + label ~ div:hover {
+    background-color: #F2F2F2;
+    border-radius: 10px;
+}
+
+.hide5, .hide5 + label ~ div {
+    display: none;
+}
+
+.hide5 + label {
+    margin: 0;
+    padding-top: 9px;
+    cursor: pointer;
+    font-family: MuseoSansCyrl;
+    font-weight: 400;
+    font-size: 16px;
+    color: #232323;
+    background: url(../img/point-down.png) no-repeat;
+    background-position: 240px center;
+    width: 250px;
+    height: 38px;
+}
+
+.hide5:checked + label {
+    font-weight: 600;
+    background: url(../img/point-up.png) no-repeat;
+    background-position: 240px center;
+}
+
+.hide5:checked + label ~ div {
+    display: block;
+    cursor: pointer;
+    padding-top: 9px;
+    font-family: MuseoSansCyrl;
+    font-weight: 400;
+    font-size: 16px;
+    color: #232323;
+    background: url(../img/point-white.png) no-repeat;
+    background-position: 240px center;
+    width: 250px;
+    height: 38px;
+    padding-left: 14px;
+}
+
+.hide5:checked + label ~ div:hover {
+    z-index: 1;
+    background: url(../img/point-yellow.png) no-repeat;
+    background-position: 240px center;
+}
+
+.hide5:checked + label ~ div:hover {
+    background-color: #F2F2F2;
+    border-radius: 10px;
+}
+
+.hide6, .hide6+ label ~ div {
+    display: none;
+}
+
+.hide6 + label {
+    margin: 0;
+    padding-top: 9px;
+    cursor: pointer;
+    font-family: MuseoSansCyrl;
+    font-weight: 400;
+    font-size: 16px;
+    color: #232323;
+    background: url(../img/point-down.png) no-repeat;
+    background-position: 240px center;
+    width: 250px;
+    height: 38px;
+}
+
+.hide6:checked + label {
+    font-weight: 600;
+    background: url(../img/point-up.png) no-repeat;
+    background-position: 240px center;
+}
+
+.hide6:checked + label ~ div {
+    display: block;
+    cursor: pointer;
+    padding-top: 9px;
+    font-family: MuseoSansCyrl;
+    font-weight: 400;
+    font-size: 16px;
+    color: #232323;
+    background: url(../img/point-white.png) no-repeat;
+    background-position: 240px center;
+    width: 250px;
+    height: 38px;
+    padding-left: 14px;
+}
+
+.hide6:checked + label ~ div:hover {
+    z-index: 1;
+    background: url(../img/point-yellow.png) no-repeat;
+    background-position: 240px center;
+}
+
+.hide6:checked + label ~ div:hover {
+    background-color: #F2F2F2;
+    border-radius: 10px;
+}
+
+.hide7, .hide7 + label ~ div {
+    display: none;
+}
+
+.hide7 + label {
+    margin: 0;
+    padding-top: 9px;
+    cursor: pointer;
+    font-family: MuseoSansCyrl;
+    font-weight: 400;
+    font-size: 16px;
+    color: #232323;
+    background: url(../img/point-down.png) no-repeat;
+    background-position: 240px center;
+    width: 250px;
+    height: 38px;
+}
+
+.hide7:checked + label {
+    font-weight: 600;
+    background: url(../img/point-up.png) no-repeat;
+    background-position: 240px center;
+}
+
+.hide7:checked + label ~ div {
+    display: block;
+    cursor: pointer;
+    padding-top: 9px;
+    font-family: MuseoSansCyrl;
+    font-weight: 400;
+    font-size: 16px;
+    color: #232323;
+    background: url(../img/point-white.png) no-repeat;
+    background-position: 240px center;
+    width: 250px;
+    height: 38px;
+    padding-left: 14px;
+}
+
+.hide7:checked + label ~ div:hover {
+    z-index: 1;
+    background: url(../img/point-yellow.png) no-repeat;
+    background-position: 240px center;
+}
+
+.hide7:checked + label ~ div:hover {
+    background-color: #F2F2F2;
+    border-radius: 10px;
+}
+
+.hide8, .hide8 + label ~ div {
+    display: none;
+}
+
+.hide8 + label {
+    margin: 0;
+    padding-top: 9px;
+    cursor: pointer;
+    font-family: MuseoSansCyrl;
+    font-weight: 400;
+    font-size: 16px;
+    color: #232323;
+    background: url(../img/point-down.png) no-repeat;
+    background-position: 240px center;
+    width: 250px;
+    height: 38px;
+}
+
+.hide8:checked + label {
+    font-weight: 600;
+    background: url(../img/point-up.png) no-repeat;
+    background-position: 240px center;
+}
+
+.hide8:checked + label ~ div {
+    display: block;
+    cursor: pointer;
+    padding-top: 9px;
+    font-family: MuseoSansCyrl;
+    font-weight: 400;
+    font-size: 16px;
+    color: #232323;
+    background: url(../img/point-white.png) no-repeat;
+    background-position: 240px center;
+    width: 250px;
+    height: 38px;
+    padding-left: 14px;
+}
+
+.hide8:checked + label ~ div:hover {
+    z-index: 1;
+    background: url(../img/point-yellow.png) no-repeat;
+    background-position: 240px center;
+}
+
+.hide8:checked + label ~ div:hover {
+    background-color: #F2F2F2;
+    border-radius: 10px;
+}
+
+.hide9, .hide9 + label ~ div {
+    display: none;
+}
+
+.hide9 + label {
+    margin: 0;
+    padding-top: 9px;
+    cursor: pointer;
+    font-family: MuseoSansCyrl;
+    font-weight: 400;
+    font-size: 16px;
+    color: #232323;
+    background: url(../img/point-down.png) no-repeat;
+    background-position: 240px center;
+    width: 250px;
+    height: 38px;
+}
+
+.hide9:checked + label {
+    font-weight: 600;
+    background: url(../img/point-up.png) no-repeat;
+    background-position: 240px center;
+}
+
+.hide9:checked + label ~ div {
+    display: block;
+    cursor: pointer;
+    padding-top: 9px;
+    font-family: MuseoSansCyrl;
+    font-weight: 400;
+    font-size: 16px;
+    color: #232323;
+    background: url(../img/point-white.png) no-repeat;
+    background-position: 240px center;
+    width: 250px;
+    height: 38px;
+    padding-left: 14px;
+}
+
+.hide9:checked + label ~ div:hover {
+    z-index: 1;
+    background: url(../img/point-yellow.png) no-repeat;
+    background-position: 240px center;
+}
+
+.hide9:checked + label ~ div:hover {
+    background-color: #F2F2F2;
+    border-radius: 10px;
+}
+
+.hide10, .hide10 + label ~ div {
+    display: none;
+}
+
+.hide10 + label {
+    margin: 0;
+    cursor: pointer;
+    font-family: MuseoSansCyrl;
+    font-weight: 400;
+    font-size: 16px;
+    color: #232323;
+    background: url(../img/point-down.png) no-repeat;
+    background-position: 240px center;
+    width: 250px;
+    height: 44px;
+}
+
+.hide10:checked + label {
+    font-weight: 600;
+    background: url(../img/point-up.png) no-repeat;
+    background-position: 240px center;
+}
+
+.hide10:checked + label ~ div {
+    display: block;
+    cursor: pointer;
+    padding-top: 16px;
+    font-family: MuseoSansCyrl;
+    font-weight: 400;
+    font-size: 16px;
+    color: #232323;
+    background: url(../img/point-white.png) no-repeat;
+    background-position: 240px center;
+    width: 250px;
+    height: 44px;
+    padding-left: 14px;
+}
+
+.hide10:checked + label ~ div:hover {
+    z-index: 1;
+    background: url(../img/point-yellow.png) no-repeat;
+    background-position: 240px center;
+}
+
+.hide10:checked + label ~ div:hover {
+    background-color: #F2F2F2;
+    border-radius: 10px;
+}
+
+.catalog {
+    margin-top: 37px;
+}
+.catalog .col {
+    padding-right: 0;
+}
+.catalog .card-group {
+    justify-content: flex-end;
+}
+.catalog .card {
+    max-width: 328px;
+    min-width: 328px;
+    max-height: 463px;
+    min-height: 463px;
+    border: 1px solid #EDEDED;
+}
+
+.catalog_card-image1 {
+    width: 66px;
+    height: 18px;
+    position: absolute;
+    left: 29px;
+    top: 26px;
+    border-radius: 3px;
+}
+
+.catalog_card-image2 {
+    width: 23.7px;
+    height: 23.7px;
+    position: absolute;
+    left: 279.66px;
+    top: 24.89px;
+}
+
+.catalog_card-image3 {
+    width: 243.06px;
+    height: 217.18px;
+    position: absolute;
+    left: 41.64px;
+    top: 59.64px;
+}
+
+.catalog_card-image4 {
+    width: 22px;
+    height: 4px;
+    position: absolute;
+    left: 102px;
+    top: 312px;
+}
+
+.catalog_card-image5 {
+    width: 22px;
+    height: 4px;
+    position: absolute;
+    left: 136px;
+    top: 312px;
+}
+
+.catalog_card-image6 {
+    width: 22px;
+    height: 4px;
+    position: absolute;
+    left: 170px;
+    top: 312px;
+}
+
+.catalog_card-image7 {
+    width: 22px;
+    height: 4px;
+    position: absolute;
+    left: 204px;
+    top: 312px;
+}
+
+.card__text {
+    position: absolute;
+    width: 229.93px;
+    height: 90.42px;
+    left: 48.48px;
+    top: 331px;
+}
+
+.catalog_card-text1 {
+    font-family: MuseoSansCyrl;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    color: #000000;
+    align-items: center;
+    margin-bottom: 7px;
+}
+
+.catalog_card-text2 {
+    font-family: MuseoSansCyrl;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 7px;
+
+}
+
+.catalog_card-text3 {
+    font-family: MuseoSansCyrl;
+    font-weight: 400;
+    font-size: 11px;
+    text-align: center;
+    color: #868686;
+}
+
+.card1 .choose-photo {
+    display: none;
+}
+
+.card1 .choose-photo + label {
+    cursor: pointer;
+}
+
+.card1 .choose-photo:not(:checked) + label > #pict1 {
+    display: none;
+}
+
+.card1 .choose-photo:not(:checked) + label > #pict2 {
+    display: none;
+}
+
+.card1 .choose-photo:checked + label > #pict3 {
+    display: none;
+}
+
+.card2 .choose-photo {
+    display: none;
+}
+
+.card2 .choose-photo + label {
+    cursor: pointer;
+}
+
+.card2 .choose-photo:not(:checked) + label > #pict1 {
+    display: none;
+}
+
+.card2 .choose-photo:not(:checked) + label > #pict2 {
+    display: none;
+}
+
+.card2 .choose-photo:checked + label > #pict3 {
+    display: none;
+}
+
+.card3 .choose-photo {
+    display: none;
+}
+
+.card3 .choose-photo + label {
+    cursor: pointer;
+}
+
+.card3 .choose-photo:not(:checked) + label > #pict1 {
+    display: none;
+}
+
+.card3 .choose-photo:not(:checked) + label > #pict2 {
+    display: none;
+}
+
+.card3 .choose-photo:checked + label > #pict3 {
+    display: none;
+}
+
+.card4 .choose-photo {
+    display: none;
+}
+
+.card4 .choose-photo + label {
+    cursor: pointer;
+}
+
+.card4 .choose-photo:not(:checked) + label > #pict1 {
+    display: none;
+}
+
+.card4 .choose-photo:not(:checked) + label > #pict2 {
+    display: none;
+}
+
+.card4 .choose-photo:checked + label > #pict3 {
+    display: none;
+}
+
+.card5 .choose-photo {
+    display: none;
+}
+
+.card5 .choose-photo + label {
+    cursor: pointer;
+}
+
+.card5 .choose-photo:not(:checked) + label > #pict1 {
+    display: none;
+}
+
+.card5 .choose-photo:not(:checked) + label > #pict2 {
+    display: none;
+}
+
+.card5 .choose-photo:checked + label > #pict3 {
+    display: none;
+}
+
+.card6 .choose-photo {
+    display: none;
+}
+
+.card6 .choose-photo + label {
+    cursor: pointer;
+}
+
+.card6 .choose-photo:not(:checked) + label > #pict1 {
+    display: none;
+}
+
+.card6 .choose-photo:not(:checked) + label > #pict2 {
+    display: none;
+}
+
+.card6 .choose-photo:checked + label > #pict3 {
+    display: none;
+}
+
+.card7 .choose-photo {
+    display: none;
+}
+
+.card7 .choose-photo + label {
+    cursor: pointer;
+}
+
+.card7 .choose-photo:not(:checked) + label > #pict1 {
+    display: none;
+}
+
+.card7 .choose-photo:not(:checked) + label > #pict2 {
+    display: none;
+}
+
+.card7 .choose-photo:checked + label > #pict3 {
+    display: none;
+}
+
+.card8 .choose-photo {
+    display: none;
+}
+
+.card8 .choose-photo + label {
+    cursor: pointer;
+}
+
+.card8 .choose-photo:not(:checked) + label > #pict1 {
+    display: none;
+}
+
+.card8 .choose-photo:not(:checked) + label > #pict2 {
+    display: none;
+}
+
+.card8 .choose-photo:checked + label > #pict3 {
+    display: none;
+}
+
+.card9 .choose-photo {
+    display: none;
+}
+
+.card9 .choose-photo + label {
+    cursor: pointer;
+}
+
+.card9 .choose-photo:not(:checked) + label > #pict1 {
+    display: none;
+}
+
+.card9 .choose-photo:not(:checked) + label > #pict2 {
+    display: none;
+}
+
+.card9 .choose-photo:checked + label > #pict3 {
+    display: none;
+}
+
+.card10 .choose-photo {
+    display: none;
+}
+
+.card10 .choose-photo + label {
+    cursor: pointer;
+}
+
+.card10 .choose-photo:not(:checked) + label > #pict1 {
+    display: none;
+}
+
+.card10 .choose-photo:not(:checked) + label > #pict2 {
+    display: none;
+}
+
+.card10 .choose-photo:checked + label > #pict3 {
+    display: none;
+}
+
+.card11 .choose-photo {
+    display: none;
+}
+
+.card11 .choose-photo + label {
+    cursor: pointer;
+}
+
+.card11 .choose-photo:not(:checked) + label > #pict1 {
+    display: none;
+}
+
+.card11 .choose-photo:not(:checked) + label > #pict2 {
+    display: none;
+}
+
+.card11 .choose-photo:checked + label > #pict3 {
+    display: none;
+}
+
+.card12 .choose-photo {
+    display: none;
+}
+
+.card12 .choose-photo + label {
+    cursor: pointer;
+}
+
+.card12 .choose-photo:not(:checked) + label > #pict1 {
+    display: none;
+}
+
+.card12 .choose-photo:not(:checked) + label > #pict2 {
+    display: none;
+}
+
+.card12 .choose-photo:checked + label > #pict3 {
+    display: none;
+}
+
+.navigation__area {
+    margin-top: 30px;
+    margin-left: 320px;
+    margin-bottom: 80px;
+}
+
+.pagination {
+    gap: 5px;
+}
+
+.page-link {
+    font-family: MuseoSansCyrl;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+    border: 1px solid #EDEDED;
+    border-radius: 10px;
+    padding: 11px 16px;
+}
+
+.page-item:first-child .page-link {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.page-item:last-child .page-link {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.page-item.active .page-link {
+    z-index: 3;
+    color: #FFFFFF;
+    background-color: #000000;
+    border-color: #000000;
+}
+
+.page-link:hover {
+    color: #000000;
+    background-color: white;
+    border: 1px solid #EDEDED;
+}
+
+.map__title {
+    font-family: MuseoSansCyrl;
+    font-weight: 600;
+    font-size: 32px;
+    color: #000000;
+    text-align: center;
+}
+
+.map__img {
+    margin-top: 30px;
+    padding: 0;
+}
+
+.map__contacts {
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.map__item {
+    padding: 0;
+}
+
+.map__gr {
+    margin: 0;
+    margin-bottom: 12px;
+    gap: 10px;
+}
+.map__cont-title {
+    font-family: MuseoSansCyrl;
+    font-weight: 400;
+    font-size: 16px;
+    color: #868686;
+    margin-bottom: 12px;
+}
+
+.map_cont-info {
+    font-family: MuseoSansCyrl;
+    font-weight: 600;
+    font-size: 18px;
+    color: #343434;
+}
+
+.map_cont-text {
+    font-family: MuseoSansCyrl;
+    font-weight: 400;
+    font-size: 12px;
+    color: #868686;
+    padding: 0;
+}
+
+.map__button {
+    width: 193px;
+    height: 38.96px;
+    background: url(../img/route.png) no-repeat;
+    background-position: 15px;
+    text-align: right;
+    padding: 13px 16px;
+    display: inline-block;
+    font-family: MuseoSansCyrl;
+    font-weight: 600;
+    font-size: 14px;
+    color: #232323;
+    background-color: #F8D000;
+    border-radius: 8px;
+    line-height: 1;
+}
+
+.map__button:hover {
+    text-decoration: none;
+    color: #232323;
+}
+
+.news-background {
+    background-color: #F2F2F2;
+}
+
+.news {
+    flex-direction: column;
+}
+
+.news__title {
+    text-align: center;
+    margin-top: 40px;
+    font-family: MuseoSansCyrl;
+    font-weight: 600;
+    font-size: 32px;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+.news__card {
+    width: 432.33px;
+    background: #FFFFFF;
+    border-radius: 24px;
+    padding: 20px;
+}
+
+.news__cardbody {
+    padding: 0;
+}
+
+.news__time {
+    font-family: MuseoSansCyrl;
+    font-weight: 400;
+    font-size: 11px;
+    color: #9E9E9E;
+    margin-top: 24px;
+    margin-bottom: 10px;
+}
+
+.news__subtitle {
+    font-family: MuseoSansCyrl;
+    font-weight: 600;
+    font-size: 20px;
+    color: #232323;
+    height: 84px;
+    margin-bottom: 10px;
+}
+
+.news__text {
+    font-family: MuseoSansCyrl;
+    font-weight: 300;
+    font-size: 14px;
+    color: #5F5F5F;
+    margin-bottom: 10px;
+}
+
+.news__button {
+    width: 96px;
+    height: 20px;
+    background: url(../img/up-arrow-svgrepo-com\ \(91\)\ 1.png) no-repeat;
+    background-position: 88px;
+    text-align: left;
+    display: inline-block;
+    font-family: MuseoSansCyrl;
+    font-weight: 600;
+    font-size: 14px;
+    color: #232323;
+}
+
+.news__button:hover {
+    text-decoration: none;
+    color: #232323;
+}
+
+.cards {
+    gap: 10px;
+}
+
+.news__button-last {
+    width: 150px;
+    height: 44px;
+    border: 1px solid #000000;
+    border-radius: 12px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    padding: 10px 24px 11px;
+    line-height: 1;
+    align-self: center;
+}
+
+.news__link {
+    font-family: MuseoSansCyrl;
+    font-weight: 600;
+    font-size: 16px;
+    color: #232323;
+}
+
+.news__link:hover {
+    text-decoration: none;
+    color: #232323;
+}
+
+.slider {
+    position: relative;
+    height: 352px;
+    margin-bottom: 5px;
+}
+.slideshow {
+    position: relative;
+}
+.com1, .com2, .com3, .com4, .com5, .com6 {
+    position: absolute;
+    bottom: 64px;
+}
+.com1, .com3, .com5 {
+    right: 113px;
+}
+.com2, .com4, .com6 {
+    right: 61px;
+}
+#target1, #target2, #target3 {
+    display: none;
+}
+.img1, .img2, .img3 {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+.img2, .img3, .com3, .com4, .com5, .com6 {
+    display: none;
+}
+#target1:target ~ .img2,
+#target1:target ~ .img3,
+#target1:target ~ .com3,
+#target1:target ~ .com4,
+#target1:target ~ .com5,
+#target1:target ~ .com6 {
+    display: none;
+}
+#target1:target ~ .img1,
+#target1:target ~ .com1,
+#target1:target ~ .com2 {
+    display: inline;
+}
+#target2:target ~ .img1,
+#target2:target ~ .img3,
+#target2:target ~ .com1,
+#target2:target ~ .com2,
+#target2:target ~ .com5,
+#target2:target ~ .com6 {
+    display: none;
+}
+#target2:target ~ .img2,
+#target2:target ~ .com3,
+#target2:target ~ .com4 {
+    display: inline;
+}
+#target3:target ~ .img1,
+#target3:target ~ .img2,
+#target3:target ~ .com1,
+#target3:target ~ .com2,
+#target3:target ~ .com3,
+#target3:target ~ .com4 {
+    display: none;
+}
+#target3:target ~ .img3,
+#target3:target ~ .com5,
+#target3:target ~ .com6 {
+    display: inline;
+}
+.header__content {
+    position: absolute;
+    z-index: 2;
+}
+.header__slogan1, .header__slogan2, .header__points, .header__links {
+    margin: 0;
+}
+.header__slogan1 {
+    line-height: 120%;
+    padding-top: 63px;
+    padding-left: 75px;
+    font-family: MuseoSansCyrl;
+    font-weight: 700;
+    font-size: 44px;
+    color: #FFFFFF;
+}
+.header__slogan2 {
+    line-height: 120%;
+    padding-left: 75px;
+    font-family: MuseoSansCyrl;
+    font-weight: 700;
+    font-size: 44px;
+    color: #FFFFFF;
+}
+.header__points {
+    padding-top: 16px;
+    padding-left: 75px;
+    column-gap: 29px;
+}
+
+.header__point {
+    column-gap: 10px;
+    margin: 0;
+    align-items: center;
+}
+
+.header__check-text {
+    font-family: MuseoSansCyrl;
+    font-weight: 600;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+.header__point img {
+    width: 14px;
+height: 14px;
+}
+.header__links {
+    padding-top: 25px;
+    padding-left: 75px;
+}
+.header__link-catalog {
+    width: 230px;
+    height: 49px;
+    background: url(../img/up-arrow-svgrepo-com\ \(90\)\ 1.png) no-repeat;
+    background-position: 200px;
+    text-align: left;
+    padding: 13px 24px 14px;
+    display: inline-block;
+    font-family: MuseoSansCyrl;
+    font-weight: 600;
+    font-size: 18px;
+    color: #232323;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    line-height: normal;
+}
+
+.header__link-catalog:hover {
+    text-decoration: none;
+    color: #232323;
+}
+.header__slogan br {
+    height: 26px;
+}
+.logo-on-header {
+    position: absolute;
+    top: 54px;
+    right: 61px;
+    z-index: 2;
+}
+.prev {
+    position: absolute;
+    right: 113px;
+    bottom: 72px;
+}
+.next {
+    position: absolute;
+    right: 61px;
+    bottom: 72px;
+}
+.ad__menu {
+    display: none;
+    padding-left: 23px;
+    padding-top: 4px;
+}
+.menu__container2 {
+    align-items: center;
+    padding-bottom: 32px;
+    justify-content: center;
+    gap: 38px;
+    display: none;
+}
+.menu__container2-row {
+    gap: 10px;
+    margin: 0;
+}
+.points2, .points3 {
+    display: none;
+}
+.delivery img {
+    width: 100%;
+}
+.del2 {
+    display: none;
+}
+.card-group > .card + .card {
+    border-left: 1px solid #EDEDED;
+}
+.card1 {
+    border-top-left-radius: 10px;
+}
+.card-group > .card:not(:last-child) ~ .card3 {
+    border-top-right-radius: 10px;
+}
+.a-hide1, .a-hide1 + label ~ div {
+    display: none;
+}
+
+.a-hide1 + label {
+    margin: 0;
+    padding-top: 9px;
+    cursor: pointer;
+    font-family: MuseoSansCyrl;
+    font-weight: 400;
+    font-size: 16px;
+    color: #232323;
+    background: url(../img/point-down.png) no-repeat;
+    background-position: 296px center;
+    width: 306px;
+    height: 38px;
+    margin-left: 23px;
+}
+
+.a-hide1:checked + label {
+    font-weight: 600;
+    background: url(../img/point-up.png) no-repeat;
+    background-position: 296px center;
+}
+.a-hide1:checked + label ~ div {
+    display: block;
+    cursor: pointer;
+    padding-top: 9px;
+    font-family: MuseoSansCyrl;
+    font-weight: 400;
+    font-size: 16px;
+    color: #232323;
+    background: url(../img/point-white.png) no-repeat;
+    background-position: 299px center;
+    width: 317px;
+    height: 38px;
+    padding-left: 14px;
+    margin-left: 23px;
+}
+
+.a-hide1:checked + label ~ div:hover {
+    z-index: 1;
+    background: url(../img/point-yellow.png) no-repeat;
+    background-position: 299px center;
+}
+
+.a-hide1:checked + label ~ div:hover {
+    background-color: #F2F2F2;
+    border-radius: 10px;
+}
+.hide0, .hide0 + label ~ div {
+    display: none;
+}
+.hide0:checked + label ~ div {
+    display: block;
+}
+.cat__menu2 {
+    display: none;
+}
+.cat__menu2 {
+    margin-left: 12px;
+}
+.hide0 + label {
+    margin: 0;
+    cursor: pointer;
+    font-family: MuseoSansCyrl;
+    font-weight: 600;
+    font-size: 18px;
+    width: 351px;
+    height: 47px;
+    color: #FFFFFF;
+    background: #232323;
+    border-radius: 10px;
+    background-image: url(../img/up-arrow-svgrepo-com\ \(90\)\ 1copy.png);
+    background-repeat: no-repeat;
+    padding: 2px 23px;
+    background-position: 318px center;
+    padding-top: 10px;
+}
+.hide0:checked + label {
+    background: white;
+    background-image: url(../img/up-arrow-svgrepo-com\ \(90\)\ 1copy2.png);
+    background-repeat: no-repeat;
+    background-position: 318px center;
+    color: #232323;
+    border: 1px solid #000000;
+    margin-bottom: 10px;
+}
+.menu2__span1 {
+    font-family: MuseoSansCyrl;
+    font-weight: 600;
+    font-size: 14px;
+    color: #232323;
+    background: #EDEDED;
+    border-radius: 6px;
+    padding: 10px 16px;
+    margin-right: 4px;
+}
+.menu2__span2 {
+    font-family: MuseoSansCyrl;
+    font-weight: 600;
+    font-size: 14px;
+    color: #232323;
+    background: #EDEDED;
+    border-radius: 6px;
+    padding: 10px 16px;
+}
+.cat__menu2 > div {
+    margin-left: 0;
+}
+.menu__2-row-span {
+    margin-bottom: 32px;
+    margin-top: 10px;
+}
+.a-hide2, .a-hide2 + label ~ div {
+    display: none;
+}
+
+.a-hide2 + label {
+    margin: 0;
+    padding-top: 9px;
+    cursor: pointer;
+    font-family: MuseoSansCyrl;
+    font-weight: 400;
+    font-size: 16px;
+    color: #232323;
+    background: url(../img/point-down.png) no-repeat;
+    background-position: 296px center;
+    width: 306px;
+    height: 38px;
+    margin-left: 23px;
+}
+
+.a-hide2:checked + label {
+    font-weight: 600;
+    background: url(../img/point-up.png) no-repeat;
+    background-position: 296px center;
+}
+.a-hide2:checked + label ~ div {
+    display: block;
+    cursor: pointer;
+    padding-top: 9px;
+    font-family: MuseoSansCyrl;
+    font-weight: 400;
+    font-size: 16px;
+    color: #232323;
+    background: url(../img/point-white.png) no-repeat;
+    background-position: 299px center;
+    width: 317px;
+    height: 38px;
+    padding-left: 14px;
+    margin-left: 23px;
+}
+
+.a-hide2:checked + label ~ div:hover {
+    z-index: 1;
+    background: url(../img/point-yellow.png) no-repeat;
+    background-position: 299px center;
+}
+
+.a-hide2:checked + label ~ div:hover {
+    background-color: #F2F2F2;
+    border-radius: 10px;
+}
+
+.a-hide3, .a-hide3 + label ~ div {
+    display: none;
+}
+
+.a-hide3 + label {
+    margin: 0;
+    padding-top: 9px;
+    cursor: pointer;
+    font-family: MuseoSansCyrl;
+    font-weight: 400;
+    font-size: 16px;
+    color: #232323;
+    background: url(../img/point-down.png) no-repeat;
+    background-position: 296px center;
+    width: 306px;
+    height: 38px;
+    margin-left: 23px;
+}
+
+.a-hide3:checked + label {
+    font-weight: 600;
+    background: url(../img/point-up.png) no-repeat;
+    background-position: 296px center;
+}
+.a-hide3:checked + label ~ div {
+    display: block;
+    cursor: pointer;
+    padding-top: 9px;
+    font-family: MuseoSansCyrl;
+    font-weight: 400;
+    font-size: 16px;
+    color: #232323;
+    background: url(../img/point-white.png) no-repeat;
+    background-position: 299px center;
+    width: 317px;
+    height: 38px;
+    padding-left: 14px;
+    margin-left: 23px;
+}
+
+.a-hide3:checked + label ~ div:hover {
+    z-index: 1;
+    background: url(../img/point-yellow.png) no-repeat;
+    background-position: 299px center;
+}
+
+.a-hide3:checked + label ~ div:hover {
+    background-color: #F2F2F2;
+    border-radius: 10px;
+}
+.a-hide4, .a-hide4 + label ~ div {
+    display: none;
+}
+
+.a-hide4 + label {
+    margin: 0;
+    padding-top: 9px;
+    cursor: pointer;
+    font-family: MuseoSansCyrl;
+    font-weight: 400;
+    font-size: 16px;
+    color: #232323;
+    background: url(../img/point-down.png) no-repeat;
+    background-position: 296px center;
+    width: 306px;
+    height: 38px;
+    margin-left: 23px;
+}
+
+.a-hide4:checked + label {
+    font-weight: 600;
+    background: url(../img/point-up.png) no-repeat;
+    background-position: 296px center;
+}
+.a-hide4:checked + label ~ div {
+    display: block;
+    cursor: pointer;
+    padding-top: 9px;
+    font-family: MuseoSansCyrl;
+    font-weight: 400;
+    font-size: 16px;
+    color: #232323;
+    background: url(../img/point-white.png) no-repeat;
+    background-position: 299px center;
+    width: 317px;
+    height: 38px;
+    padding-left: 14px;
+    margin-left: 23px;
+}
+
+.a-hide4:checked + label ~ div:hover {
+    z-index: 1;
+    background: url(../img/point-yellow.png) no-repeat;
+    background-position: 299px center;
+}
+
+.a-hide4:checked + label ~ div:hover {
+    background-color: #F2F2F2;
+    border-radius: 10px;
+}
+.a-hide5, .a-hide5 + label ~ div {
+    display: none;
+}
+
+.a-hide5 + label {
+    margin: 0;
+    padding-top: 9px;
+    cursor: pointer;
+    font-family: MuseoSansCyrl;
+    font-weight: 400;
+    font-size: 16px;
+    color: #232323;
+    background: url(../img/point-down.png) no-repeat;
+    background-position: 296px center;
+    width: 306px;
+    height: 38px;
+    margin-left: 23px;
+}
+
+.a-hide5:checked + label {
+    font-weight: 600;
+    background: url(../img/point-up.png) no-repeat;
+    background-position: 296px center;
+}
+.a-hide5:checked + label ~ div {
+    display: block;
+    cursor: pointer;
+    padding-top: 9px;
+    font-family: MuseoSansCyrl;
+    font-weight: 400;
+    font-size: 16px;
+    color: #232323;
+    background: url(../img/point-white.png) no-repeat;
+    background-position: 299px center;
+    width: 317px;
+    height: 38px;
+    padding-left: 14px;
+    margin-left: 23px;
+}
+
+.a-hide5:checked + label ~ div:hover {
+    z-index: 1;
+    background: url(../img/point-yellow.png) no-repeat;
+    background-position: 299px center;
+}
+
+.a-hide5:checked + label ~ div:hover {
+    background-color: #F2F2F2;
+    border-radius: 10px;
+}
+.a-hide6, .a-hide6 + label ~ div {
+    display: none;
+}
+
+.a-hide6 + label {
+    margin: 0;
+    padding-top: 9px;
+    cursor: pointer;
+    font-family: MuseoSansCyrl;
+    font-weight: 400;
+    font-size: 16px;
+    color: #232323;
+    background: url(../img/point-down.png) no-repeat;
+    background-position: 296px center;
+    width: 306px;
+    height: 38px;
+    margin-left: 23px;
+}
+
+.a-hide6:checked + label {
+    font-weight: 600;
+    background: url(../img/point-up.png) no-repeat;
+    background-position: 296px center;
+}
+.a-hide6:checked + label ~ div {
+    display: block;
+    cursor: pointer;
+    padding-top: 9px;
+    font-family: MuseoSansCyrl;
+    font-weight: 400;
+    font-size: 16px;
+    color: #232323;
+    background: url(../img/point-white.png) no-repeat;
+    background-position: 299px center;
+    width: 317px;
+    height: 38px;
+    padding-left: 14px;
+    margin-left: 23px;
+}
+
+.a-hide6:checked + label ~ div:hover {
+    z-index: 1;
+    background: url(../img/point-yellow.png) no-repeat;
+    background-position: 299px center;
+}
+
+.a-hide6:checked + label ~ div:hover {
+    background-color: #F2F2F2;
+    border-radius: 10px;
+}
+.a-hide7, .a-hide7 + label ~ div {
+    display: none;
+}
+
+.a-hide7 + label {
+    margin: 0;
+    padding-top: 9px;
+    cursor: pointer;
+    font-family: MuseoSansCyrl;
+    font-weight: 400;
+    font-size: 16px;
+    color: #232323;
+    background: url(../img/point-down.png) no-repeat;
+    background-position: 296px center;
+    width: 306px;
+    height: 38px;
+    margin-left: 23px;
+}
+
+.a-hide7:checked + label {
+    font-weight: 600;
+    background: url(../img/point-up.png) no-repeat;
+    background-position: 296px center;
+}
+.a-hide7:checked + label ~ div {
+    display: block;
+    cursor: pointer;
+    padding-top: 9px;
+    font-family: MuseoSansCyrl;
+    font-weight: 400;
+    font-size: 16px;
+    color: #232323;
+    background: url(../img/point-white.png) no-repeat;
+    background-position: 299px center;
+    width: 317px;
+    height: 38px;
+    padding-left: 14px;
+    margin-left: 23px;
+}
+
+.a-hide7:checked + label ~ div:hover {
+    z-index: 1;
+    background: url(../img/point-yellow.png) no-repeat;
+    background-position: 299px center;
+}
+
+.a-hide7:checked + label ~ div:hover {
+    background-color: #F2F2F2;
+    border-radius: 10px;
+}
+.a-hide8, .a-hide8 + label ~ div {
+    display: none;
+}
+
+.a-hide8 + label {
+    margin: 0;
+    padding-top: 9px;
+    cursor: pointer;
+    font-family: MuseoSansCyrl;
+    font-weight: 400;
+    font-size: 16px;
+    color: #232323;
+    background: url(../img/point-down.png) no-repeat;
+    background-position: 296px center;
+    width: 306px;
+    height: 38px;
+    margin-left: 23px;
+}
+
+.a-hide8:checked + label {
+    font-weight: 600;
+    background: url(../img/point-up.png) no-repeat;
+    background-position: 296px center;
+}
+.a-hide8:checked + label ~ div {
+    display: block;
+    cursor: pointer;
+    padding-top: 9px;
+    font-family: MuseoSansCyrl;
+    font-weight: 400;
+    font-size: 16px;
+    color: #232323;
+    background: url(../img/point-white.png) no-repeat;
+    background-position: 299px center;
+    width: 317px;
+    height: 38px;
+    padding-left: 14px;
+    margin-left: 23px;
+}
+
+.a-hide8:checked + label ~ div:hover {
+    z-index: 1;
+    background: url(../img/point-yellow.png) no-repeat;
+    background-position: 299px center;
+}
+
+.a-hide8:checked + label ~ div:hover {
+    background-color: #F2F2F2;
+    border-radius: 10px;
+}
+.a-hide9, .a-hide9 + label ~ div {
+    display: none;
+}
+
+.a-hide9 + label {
+    margin: 0;
+    padding-top: 9px;
+    cursor: pointer;
+    font-family: MuseoSansCyrl;
+    font-weight: 400;
+    font-size: 16px;
+    color: #232323;
+    background: url(../img/point-down.png) no-repeat;
+    background-position: 296px center;
+    width: 306px;
+    height: 38px;
+    margin-left: 23px;
+}
+
+.a-hide9:checked + label {
+    font-weight: 600;
+    background: url(../img/point-up.png) no-repeat;
+    background-position: 296px center;
+}
+.a-hide9:checked + label ~ div {
+    display: block;
+    cursor: pointer;
+    padding-top: 9px;
+    font-family: MuseoSansCyrl;
+    font-weight: 400;
+    font-size: 16px;
+    color: #232323;
+    background: url(../img/point-white.png) no-repeat;
+    background-position: 299px center;
+    width: 317px;
+    height: 38px;
+    padding-left: 14px;
+    margin-left: 23px;
+}
+
+.a-hide9:checked + label ~ div:hover {
+    z-index: 1;
+    background: url(../img/point-yellow.png) no-repeat;
+    background-position: 299px center;
+}
+
+.a-hide9:checked + label ~ div:hover {
+    background-color: #F2F2F2;
+    border-radius: 10px;
+}
+.a-hide10, .a-hide10 + label ~ div {
+    display: none;
+}
+
+.a-hide10 + label {
+    margin: 0;
+    padding-top: 9px;
+    cursor: pointer;
+    font-family: MuseoSansCyrl;
+    font-weight: 400;
+    font-size: 16px;
+    color: #232323;
+    background: url(../img/point-down.png) no-repeat;
+    background-position: 296px center;
+    width: 306px;
+    height: 38px;
+    margin-left: 23px;
+}
+
+.a-hide10:checked + label {
+    font-weight: 600;
+    background: url(../img/point-up.png) no-repeat;
+    background-position: 296px center;
+}
+.a-hide10:checked + label ~ div {
+    display: block;
+    cursor: pointer;
+    padding-top: 9px;
+    font-family: MuseoSansCyrl;
+    font-weight: 400;
+    font-size: 16px;
+    color: #232323;
+    background: url(../img/point-white.png) no-repeat;
+    background-position: 299px center;
+    width: 317px;
+    height: 38px;
+    padding-left: 14px;
+    margin-left: 23px;
+}
+
+.a-hide10:checked + label ~ div:hover {
+    z-index: 1;
+    background: url(../img/point-yellow.png) no-repeat;
+    background-position: 299px center;
+}
+
+.a-hide10:checked + label ~ div:hover {
+    background-color: #F2F2F2;
+    border-radius: 10px;
+}
+.cat__menu2 {
+    margin-bottom: 10px;
+    padding-left: 0;
+}
+.card__text-adapt {
+    display: none;
+}
+.card-group > .card:last-child {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.map__image {
+    width: -webkit-fill-available;
+}
+.map__img-ad {
+    margin-top: 30px;
+    padding: 0;
+}
+.map__img-ad {
+    display: none;
+}
+.map__gr-adr {
+    margin-top: 6px;
+    margin-bottom: 6px;
+    text-align: center;
+    display: none;
+}
+.news__card {
+    min-width: 351px;
+}
+.footer2 {
+    display: none;
+    padding-top: 32px;
+    padding-bottom: 47px;
+}
+.footer2 .row {
+    justify-content: center;
+}
+.row1 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    gap: 23px;
+}
+.footer2 .footer__left_menu-link {
+    font-size: 16px;
+}
+.row2 {
+    height: 34px;
+    line-height: 240%;
+}
+.footer2 .footer__right_menu-contact-number {
+    height: 24px;
+    line-height: 24px;
+}
+.row3 {
+    height: 29px;
+    line-height: 240%;
+    margin-bottom: 20px;
+}
+.row4 {
+    height: 34px;
+    margin-bottom: 32px;
+}
+.footer2 .footer__right_menu-subtitle {
+    text-align: center;
+}
+.footer2 .footer__right_menu-hours {
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 29px;
+    line-height: 240%;
+    margin-top: 6px;
+}
+.footer2 .footer__left_menu-article {
+    padding-top: 30px;
+    text-align: center;
+    padding-right: 0;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+}
+.footer2 .footer__right_menu-warning-column {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.footer2 .footer__right_menu-warning-text {
+    width: 261px;
+    text-align: center;
+}
+.hidden-menu {
+    max-width: 253px;
+    min-width: 253px;
+    height: 407px;
+    background-color: white;
+    border-bottom-right-radius: 10px;
+}
+.hdm-img {
+    padding-top: 39px;
+    padding-left: 23px;
+    padding-bottom: 25px;
+}
+.hdm-link {
+    font-size: 15px;
+    width: 190px;
+    height: 42px;
+    line-height: 18px;
+    margin-left: 25px;
+    margin-bottom: 20px;
+}
+.hdm-link1, .hdm-link2 {
+    font-size: 15px;
+    color: #232323;
+    margin-left: 25px;
+}
+.hdm-link1 {
+    margin-bottom: 20px;
+}
+.hdm-link2 {
+    margin-bottom: 21px;
+}
+.hdm-link1:hover, .hdm-link2:hover {
+    font-size: 15px;
+    color: #232323;
+}
+.hdm-title {
+    margin-left: 25px;
+    font-size: 14px;
+    height: 34px;
+    line-height: 240%;
+    margin-bottom: 6px;
+}
+.hdm-adr {
+    margin-left: 25px;
+    margin-bottom: 22px;
+}
+.hdm-but {
+    margin-left: 25px;
+    border: 1px solid #000000;
+    background-color: white;
+}
+.hid-menu, .hid-menu + label ~ div {
+    display: none;
+}
+.hid-menu + label {
+    cursor: pointer;
+}
+.hid-menu:checked + label ~ div {
+    display: block;
+    position: absolute;
+    z-index: 5;
+    left: 0;
+    top: -50px;
+}
